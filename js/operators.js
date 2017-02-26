@@ -29,6 +29,13 @@
 	*=			x *= y		x = x * y
 	/=			x /= y		x = x / y
 	%=			x %= y		x = x % y
+	<<=			x <<= y		x = x << y
+	>>=			x >>= y		x = x >> y
+	>>>=		x >>>= y	x = x >>> y
+	&=			x &= y		x = x & y
+	^=			x ^= y		x = x ^ y
+	|=			x |= y		x = x | y
+	**=			x **= y		x = x ** y
 */
 
 /****** String operators ******/
@@ -44,6 +51,8 @@
 	x = 5 + 5; => "10"
 	y = "5" + 5; => "55"
 	z = "Hello" + 5; => "Hello5"
+	'Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.'
+	`Fifteen is ${a + b} and\nnot ${2 * a + b}.`
 */
 
 /****** Comparasion operators ******/

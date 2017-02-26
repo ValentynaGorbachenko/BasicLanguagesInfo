@@ -84,6 +84,7 @@ Ruby data types #comment  =begin\n <block>\n =end
 1.  Create a function
 2.  Modify a function
 3.  Call the function
+4.  Errow functions
 
 ***Regular expressions***
 1. Find
