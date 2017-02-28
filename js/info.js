@@ -76,9 +76,9 @@ console.log('prop' in obj);
 // console.log('prop' in obj);
 
 // Retrieval - Object.keys(obj), Object.getOwnPropertyNames(obj)
-console.log(Object.keys(obj));
+console.log(1, Object.keys(obj));
 
-console.log(Object.getOwnPropertyNames(obj));
+console.log(2, Object.getOwnPropertyNames(obj));
 
 /****** Semantics ******/
 /*

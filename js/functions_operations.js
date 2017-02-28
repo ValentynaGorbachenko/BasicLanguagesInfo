@@ -113,10 +113,15 @@ var Foo = () => {};
 class Foo2{
 
 }
-console.log(typeof Foo);
-console.log(typeof Foo2);
-console.log(typeof new Foo2());
-console.log(Foo2.prototype);
+function Foo3(){
+
+}
+console.log(1, typeof Foo);
+console.log(2, typeof Foo2);
+console.log(3, typeof new Foo2());
+console.log(4, Foo2.prototype);
+console.log(5, Foo3.prototype);
+console.log(6, typeof Foo3);
 
 // An empty arrow function returns undefined
 let empty = () => {};
