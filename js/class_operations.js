@@ -27,15 +27,17 @@ function ChildClass() {
   	};
   	this.getPrivateVar = () => {return privateVar}; // have to say return to make it work
 }
-ChildClass.prototype = new ParentClass; // super..
+
+ChildClass.prototype = new ParentClass; // super.. inheritance 
+
 ChildClass.prototype.prototypeMethod = function() {
 	console.log("from ChildClass function prototypeMethod");
 };
 
 console.log(
-  Object.getOwnPropertyNames(
-    new ChildClass() // ["prop", "method"]
-  )
+  	Object.getOwnPropertyNames(
+    	new ChildClass() // ["prop", "method"]
+  	)
 );
 
 let chld = new ChildClass();
@@ -53,19 +55,28 @@ prnt.inheritedMethod();
 
 /*****************************/
 // constructor([arguments]) { ... }
+
 // constructor() {}
+
 // constructor(...args) {
 //   super(...args);
 // }
+
+// super([arguments]); // calls the parent constructor.
+// super.functionOnParent([arguments]);
+
 // class Name [extends] {
 //   // class body
 // }
 class Polygon { // class defenition 
-  constructor(height, width) {
-    this.name = 'Polygon';
-    this.height = height;
-    this.width = width;
-  }
+  	constructor(height, width) {
+	    this.name = 'Polygon';
+	    this.height = height;
+	    this.width = width;
+  	}
+  	sayName() {
+    	console.log('Hi, I am a ', this.name + '.');
+  	}
 }
 
 var MyPolygon = Polygon; // class expression 
@@ -74,12 +85,49 @@ console.log(Polygon.name); // Polygon
 console.log(MyPolygon.name); // Polygon
 
 class Square extends Polygon {
-  constructor(length) {
-    super(length, length);
-    this.name = 'Square';
-  }
+  	constructor(length) {
+  		// this.height; // ReferenceError, super needs to be called first!
+	    super(length, length);
+	    this.name = 'Square';
+  	}
+  	get area() {
+    	return this.height * this.width;
+  	}
+
+  	set area(value) {
+    	this.height = this.width = Math.sqrt(value);
+  	} 
 }
 console.log(Square.name);
+
+class Human {
+  	constructor() {}
+  	static ping() { // class methods
+    	return 'ping';
+  	}
+}
+
+class Computer extends Human {
+  	constructor() {}
+  	static pingpong() { // class methods
+    	return super.ping() + ' pong';
+  	}
+}
+console.log(Computer.pingpong()); // 'ping pong'
+
+class Base {
+  	constructor() {}
+  	foo() {}
+}
+class Derived extends Base {
+  	constructor() {}
+  	delete() {
+    	delete super.foo;
+  	}
+}
+
+//new Derived().delete(); // ReferenceError: invalid delete involving 'super'.
+
 // var MyClass = class [className] [extends] {
 //   // class body
 // };
@@ -114,4 +162,4 @@ var Coo = class NamedCoo {
 var bar = new Coo();
 console.log(bar.whoIsThere()); // "NamedCoo"
 // NamedCoo.name; // ReferenceError: NamedFoo is not defined
-console.log(Coo.name); // "NamedFoo"
+console.log(Coo.name); // "NamedCoo"

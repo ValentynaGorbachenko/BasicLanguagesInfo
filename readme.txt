@@ -10,7 +10,10 @@ lang
 
 ***Info***
 
-Informational section for each language will contain language description, data types, comments
+Informational section for each language will contain 
+	language description, 
+	data types, 
+	comments
 
 JavaScript data types //comment  /* <block> */
 1.  Array
@@ -55,18 +58,17 @@ Ruby data types #comment  =begin\n <block>\n =end
 
 ***Operations for data structures***
 
-0.  Comments
 1.  Create new data structure
-2.  Find/access/read an elenemt at the position
-3.  Find/access/read the element with a value
-4.  Modify/reassign the element at the position in the data structure 
-5.  Modify/reassign the element with a vakue in the data structure 
-6.  Add an elenemt to the end of the data structure
-7.  Add an elenemt to the beginning of the data structure
-8.  Insert/s the element at a position of the data structure
-9.  Cut element/s from and to position
-10. Get the size of the data structure
-11. Loop through the data structure 
+2.  Get the size of the data structure
+3.  Find/access/read an elenemt at the position
+4.  Find/access/read the element with a value
+5.  Modify/reassign the element at the position in the data structure 
+6.  Modify/reassign the element with a value in the data structure 
+7.  Add/Delete an elenemt to the end of the data structure
+8.  Add/Delete an elenemt to the beginning of the data structure
+9.  Insert/s the element at a position of the data structure
+10. Cut element/s from and to position 
+11. Loop through the data structure
 
 ***Operations for classes***
 
