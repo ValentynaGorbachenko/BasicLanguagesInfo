@@ -12,7 +12,9 @@
 11. Loop through the data structure
 */
 "use strict";
-/********** String ************/
+
+/********** STRINGS ************/
+
 // Create an empty string - "", new String()
 console.log("Create an empty string");
 

@@ -12,7 +12,9 @@
 11. Loop through the data structure
 */
 "use strict";
-/********** ARRAY ************/
+
+/********** ARRAYS ************/
+
 // Create an empty array - [], new Array(), Array.of(...elem)
 console.log("Create an empty array");
 var arr1 = []; // []
