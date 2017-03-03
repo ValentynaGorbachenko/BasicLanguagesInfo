@@ -51,8 +51,21 @@
 	x = 5 + 5; => "10"
 	y = "5" + 5; => "55"
 	z = "Hello" + 5; => "Hello5"
+
 	'Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.'
 	`Fifteen is ${a + b} and\nnot ${2 * a + b}.`
+
+*/
+
+/* Conditional Operator (?) */
+/*
+	Test ? expr1 : expr2
+
+	Test − Refers to the conditional expression
+
+	expr1 − Value returned if the condition is true
+
+	expr2 − Value returned if the condition is false
 */
 
 /****** Comparasion operators ******/

@@ -14,7 +14,7 @@
 "use strict";
 
 /********** STRINGS ************/
-
+// string concatenation 
 // Create an empty string - "", new String()
 console.log("Create an empty string");
 
@@ -27,10 +27,12 @@ console.log("\nGet the size of a string");
 console.log("\nFind/access/read an elenemt at the position")
 
 
-for (let value of [1,2,3]){ // for ... of 
+for (let value of "string"){ // for ... of 
 	console.log(value);
 }
-
+for (let index in "string"){ // for ... in 
+	console.log(index);
+}
 // Find/access/read the element with a value - str.indexOf(value) => index or -1
 console.log("\nFind/access/read the element with a value");
 

@@ -94,3 +94,40 @@ console.log(2, Object.getOwnPropertyNames(obj));
 	for (var ForBinding of AssignmentExpression)Statement
 	for (ForDeclaration of AssignmentExpression)Statement
 */
+
+/****** Decision Making ******/
+
+/* 
+	if(boolean_expression) {  
+		// statement(s) will execute if the Boolean expression is true  
+	}
+
+	if(boolean_expression) {  
+		// statement(s) will execute if the Boolean expression is true  
+	} else {  
+		// statement(s) will execute if the Boolean expression is false  
+	}
+	
+	if (boolean_expression1) { 
+		//statements if the expression1 evaluates to true 
+	} else if (boolean_expression2) { 
+		//statements if the expression2 evaluates to true 
+	} else { 
+		//statements if both expression1 and expression2 result to false 
+	} 
+
+	switch(variable_expression) { 
+		case constant_expr1: { 
+			//statements; 
+			break; 
+		} 
+		case constant_expr2: { 
+			//statements;
+			break; 
+		} 
+		default: { 
+			//statements; 
+			break; 
+		} 
+	}
+*/
