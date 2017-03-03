@@ -48,7 +48,7 @@ for (let value of arr3){ // for ... of - for arrays, maps, sets
 	console.log(value);
 }
 
-// Find/access/read the element with a value - arr.indexOf(value) => index or -1
+// Find/access/read the element with a value - arr.indexOf(value[, fromIndex]) => index or -1
 console.log("\nFind/access/read the element with a value");
 /*
 arr.includes(searchElement)

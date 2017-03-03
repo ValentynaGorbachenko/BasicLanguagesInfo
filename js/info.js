@@ -6,7 +6,7 @@
 	dynamic scripting language, supporting object-oriented, imperative, 
 	and declarative (e.g. functional programming) styles.
 */
-
+"use strict";
 /****** Comments ******/
 
 // Inline comments done by using double slash 
@@ -32,7 +32,6 @@
 	
 */
 
-"use strict";
 /****** Values of Data Types ******/
 	true && false // Boolean type 
 	null // Null type
@@ -65,7 +64,7 @@ obj.hasOwnProperty("prop");
 // Iteratable for... in loop, in
 for (let name in obj){
 	if(obj.hasOwnProperty(name)){
-		console.log(obj[name]);
+		console.log("obj[name]",obj[name]);
 	} else{
 		console.log(name);
 	}
@@ -98,36 +97,65 @@ console.log(2, Object.getOwnPropertyNames(obj));
 /****** Decision Making ******/
 
 /* 
-	if(boolean_expression) {  
-		// statement(s) will execute if the Boolean expression is true  
+	if (condition)
+	   statement1
+	[else
+	   statement2]
+
+	if (condition1)
+	   statement1
+	else if (condition2)
+	   statement2
+	else if (condition3)
+	   statement3
+	...
+	else
+	   statementN
+
+
+	switch (expression) {
+	  case value1:
+	    //Statements executed when the result of expression matches value1
+	    [break;]
+	  case value2:
+	    //Statements executed when the result of expression matches value2
+	    [break;]
+	  ...
+	  case valueN:
+	    //Statements executed when the result of expression matches valueN
+	    [break;]
+	  default:
+	    //Statements executed when none of the values match the value of the expression
+	    [break;]
+	}
+*/
+
+/****** Definite Loop ******/
+/*
+	for ([initialization]; [condition]; [final-expression])
+	   statement 
+
+	for (variable-key in object) { ...
 	}
 
-	if(boolean_expression) {  
-		// statement(s) will execute if the Boolean expression is true  
-	} else {  
-		// statement(s) will execute if the Boolean expression is false  
+	for (variable-value of iterable) {
+	  statement
 	}
-	
-	if (boolean_expression1) { 
-		//statements if the expression1 evaluates to true 
-	} else if (boolean_expression2) { 
-		//statements if the expression2 evaluates to true 
-	} else { 
-		//statements if both expression1 and expression2 result to false 
-	} 
+*/
 
-	switch(variable_expression) { 
-		case constant_expr1: { 
-			//statements; 
-			break; 
-		} 
-		case constant_expr2: { 
-			//statements;
-			break; 
-		} 
-		default: { 
-			//statements; 
-			break; 
-		} 
-	}
+/****** Indefinite Loop ******/
+/*
+	while (condition)
+	  statement
+
+	do
+	   statement
+	while (condition);
+*/
+
+/****** Loop Control Statements ******/
+/*
+	break [label];
+
+	continue [label];
 */
