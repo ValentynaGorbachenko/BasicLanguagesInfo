@@ -31,6 +31,15 @@
 		* Object
 	
 */
+// Import
+
+// inside the fahrenheit_to_celsius.js
+// export {fahrenheitToCelsius};
+// module.exports = fahrenheitToCelsius; // node
+
+// inside the celsius_to_fahrenheit.js
+// import {fahrenheitToCelsius} from 'fahrenheit_to_celsius';
+// const fahrenheitToCelsius = require('./fahrenheit_to_celsius'); // node
 
 /****** Values of Data Types ******/
 	true && false // Boolean type 
